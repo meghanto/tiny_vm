@@ -6,7 +6,7 @@ A tiny virtual machine interpreter for Quack programs
 Instructions
 
 
-For Mini-quack:
+For Almost-quack: (quack without typecase)
 
 build 
 ```
