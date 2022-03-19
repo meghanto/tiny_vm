@@ -18,12 +18,12 @@ cd ..
 
 # Compile and Run:
 ```
-./quack -i quacksample.qck [-o Main.asm] [-cn Main]
+./quack -i quacksample.qck  [-cn Main]
 ```
 # Compile:
 
 ```
-./quackc -i quacksample.qck [-o Main.asm] [-cn Main]
+./quackc -i quacksample.qck [-cn Main]
 ```
 
 Use the -o and -cn optional parameters to change the output file name and the program class name.
@@ -31,7 +31,5 @@ Use the -o and -cn optional parameters to change the output file name and the pr
 Options:
 
 -i / --input : specify input quack program
-
--o / --output : specify output asm file name (defaults to Main.asm)
 
 -cn / --classname : specify program class name (defaults to Main)
