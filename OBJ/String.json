@@ -2,14 +2,14 @@
   "class_name": "String",
   "super": "Obj",
   "methods": [ "$constructor",
-    "string",
-    "print",
-    "equals",
-    "less",
-    "more",
-    "atleast",
-    "atmost",
-    "plus"
+    "STR",
+    "PRINT",
+    "EQUALS",
+    "LESS",
+    "MORE",
+    "ATLEAST",
+    "ATMOST",
+    "PLUS"
   ],
   "fields": []
 }

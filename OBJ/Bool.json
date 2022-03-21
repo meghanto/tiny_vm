@@ -2,10 +2,10 @@
   "class_name": "Bool",
   "super": "Obj",
   "methods": [ "$constructor",
-    "string",
-    "print",
-    "equals",
-    "not"
+    "STR",
+    "PRINT",
+    "EQUALS",
+    "NOT"
   ],
   "fields": [],
   "constants": [],

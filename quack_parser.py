@@ -473,37 +473,37 @@ class AttachParent(Visitor):
 class DesugarTransformer(Transformer_InPlaceRecursive):
     def add(self,t):
         left,right= t
-        return methodcall_tree(left,'plus',right)
+        return methodcall_tree(left,'PLUS',right)
     def sub(self,t):
         left,right= t
-        return methodcall_tree(left,'sub',right)
+        return methodcall_tree(left,'MINUS',right)
     def mul(self,t):
         left,right= t
-        return methodcall_tree(left,'mul',right)
+        return methodcall_tree(left,'TIMES',right)
     def div(self,t):
         left,right= t
-        return methodcall_tree(left,'div',right)
+        return methodcall_tree(left,'DIVIDE',right)
     def neg(self,t):
         right,*_ = t
-        return methodcall_tree(right,'neg')
+        return methodcall_tree(right,'NEG')
     def less(self,t):
         left,right= t
-        return methodcall_tree(left,'less',right)
+        return methodcall_tree(left,'LESS',right)
     def more(self,t):
         left,right= t
-        return methodcall_tree(left,'more',right)
+        return methodcall_tree(left,'MORE',right)
     def atleast(self,t):
         left,right= t
-        return methodcall_tree(left,'atleast',right)
+        return methodcall_tree(left,'ATLEAST',right)
     def atmost(self,t):
         left,right= t
-        return methodcall_tree(left,'atmost',right)
+        return methodcall_tree(left,'ATMOST',right)
     def equals(self,t):
         left,right= t
-        return methodcall_tree(left,'equals',right)
+        return methodcall_tree(left,'EQUALS',right)
     def _not(self,t):
         right,*_= t
-        return methodcall_tree(right,'not')
+        return methodcall_tree(right,'NOT')
     def __default__(self,data,children,meta):
         return Tree(data,children,meta)
 
